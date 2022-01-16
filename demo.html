@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function demo</title>
+</head>
+<body>
+Square of <input type="text" id="sonhap" oninput="tinhtoan()"> is: <span id="result"></span>
+<script>
+  function square(number) {
+    var result = number * number;
+    return result;
+  }
+  function tinhtoan() {
+    var so = document.getElementById("sonhap").value;
+    var result = square(so);
+    document.getElementById("result").innerHTML = result;
+  }
+</script>
+</body>
+</html>
